@@ -1,0 +1,26 @@
+﻿<Page x:Class="PassengerTransportationProject.Pages.AuthtorizationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PassengerTransportationProject.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="1200">
+
+    <Grid>
+
+        <StackPanel Name="AuthtorizationPanel" Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0 -100 0 0">
+            <TextBlock FontSize="22" FontFamily="Tahoma" FontWeight="Bold" HorizontalAlignment="Center" Margin="0 20" Text="Авторизация"/>
+            <TextBox CommandManager.PreviewExecuted="TextBox_PreviewExecuted" MaxLength="49" materialDesign:TextFieldAssist.CharacterCounterVisibility="Collapsed" SelectionBrush="DodgerBlue" materialDesign:HintAssist.IsFloating="False" x:Name="LoginTextBox" Width="270" VerticalAlignment="Center" Height="50"  materialDesign:HintAssist.Hint="Логин" VerticalContentAlignment="Center" Style="{StaticResource MaterialDesignOutlinedTextBox}" Margin="0 0 0 15"/>
+            <PasswordBox MaxLength="49" materialDesign:TextFieldAssist.CharacterCounterVisibility="Collapsed" CommandManager.PreviewExecuted="TextBox_PreviewExecuted" SelectionBrush="DodgerBlue" materialDesign:HintAssist.IsFloating="False" x:Name="PasswordTextBox" Width="270" VerticalAlignment="Center" Height="50" materialDesign:HintAssist.Hint="Пароль" VerticalContentAlignment="Center" materialDesign:PasswordBoxAssist.Password="{Binding Password2, Mode=TwoWay}" IsEnabled="{Binding ElementName=RevealPasswordFloatingEnabled, Path=IsChecked}" Style="{StaticResource MaterialDesignOutlinedRevealPasswordBox}"/>
+            <Border HorizontalAlignment="Center" Margin="0 10 0 0">
+                <StackPanel Orientation="Horizontal">
+                    <CheckBox Name="SaveMeCheck"/>
+                    <TextBlock Text="Запомнить меня"  FontSize="14" Opacity="0.5" Margin="5 0"/>
+                </StackPanel>
+            </Border>
+            <Button x:Name="EnterButton" Click="EnterButton_Click" Width="130" Height="47"  Foreground="White" Margin="0 10 0 10" Background="#279667" Content="Войти"/>
+        </StackPanel>
+    </Grid>
+</Page>

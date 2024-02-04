@@ -1,0 +1,563 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="Хранилище PassengerTransportationModel" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Gender">
+          <Key>
+            <PropertyRef Name="GenderID" />
+          </Key>
+          <Property Name="GenderID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Gender" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="MyTicket">
+          <Key>
+            <PropertyRef Name="TicketID" />
+          </Key>
+          <Property Name="TicketID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="PhoneNumber" Type="nvarchar" MaxLength="11" />
+          <Property Name="PassportNumber" Type="int" />
+          <Property Name="PlaceNumber" Type="int" />
+          <Property Name="CostTicket" Type="decimal" Precision="16" Scale="2" />
+          <Property Name="NationalityID" Type="int" />
+          <Property Name="RouteID" Type="int" />
+          <Property Name="TransporterID" Type="int" />
+          <Property Name="PassengerID" Type="int" />
+        </EntityType>
+        <EntityType Name="Nationality">
+          <Key>
+            <PropertyRef Name="NationalityID" />
+          </Key>
+          <Property Name="NationalityID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nationality" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Passenger">
+          <Key>
+            <PropertyRef Name="PassengerID" />
+          </Key>
+          <Property Name="PassengerID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Surname" Type="nvarchar" MaxLength="50" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+          <Property Name="Patronymic" Type="nvarchar" MaxLength="50" />
+          <Property Name="DateBirth" Type="date" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" />
+          <Property Name="Login" Type="nvarchar" MaxLength="50" />
+          <Property Name="GenderID" Type="int" />
+        </EntityType>
+        <EntityType Name="Route">
+          <Key>
+            <PropertyRef Name="RouteID" />
+          </Key>
+          <Property Name="RouteID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DateTargetStation" Type="datetime" />
+          <Property Name="DateDepartureStation" Type="datetime" />
+          <Property Name="ReservedSeatCost" Type="decimal" Precision="16" Scale="2" />
+          <Property Name="CompartmentCost" Type="decimal" Precision="16" Scale="2" />
+          <Property Name="StationDepartureID" Type="int" />
+          <Property Name="StationTargetID" Type="int" />
+        </EntityType>
+        <EntityType Name="StationDeparture">
+          <Key>
+            <PropertyRef Name="StationID" />
+          </Key>
+          <Property Name="StationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameDepartureStation" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="StationTarget">
+          <Key>
+            <PropertyRef Name="StationID" />
+          </Key>
+          <Property Name="StationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NameTargetStation" Type="nvarchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Task">
+          <Key>
+            <PropertyRef Name="TaskID" />
+          </Key>
+          <Property Name="TaskID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Subject" Type="nvarchar(max)" />
+          <Property Name="Text" Type="nvarchar(max)" />
+          <Property Name="DateTask" Type="datetime" />
+          <Property Name="Priority" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Transporter">
+          <Key>
+            <PropertyRef Name="TransporterID" />
+          </Key>
+          <Property Name="TransporterID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Name" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK__MyTicket__Nation__48CFD27E">
+          <End Role="Nationality" Type="Self.Nationality" Multiplicity="0..1" />
+          <End Role="MyTicket" Type="Self.MyTicket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Nationality">
+              <PropertyRef Name="NationalityID" />
+            </Principal>
+            <Dependent Role="MyTicket">
+              <PropertyRef Name="NationalityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__MyTicket__Passen__47DBAE45">
+          <End Role="Passenger" Type="Self.Passenger" Multiplicity="0..1" />
+          <End Role="MyTicket" Type="Self.MyTicket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Passenger">
+              <PropertyRef Name="PassengerID" />
+            </Principal>
+            <Dependent Role="MyTicket">
+              <PropertyRef Name="PassengerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__MyTicket__RouteI__45F365D3">
+          <End Role="Route" Type="Self.Route" Multiplicity="0..1" />
+          <End Role="MyTicket" Type="Self.MyTicket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Route">
+              <PropertyRef Name="RouteID" />
+            </Principal>
+            <Dependent Role="MyTicket">
+              <PropertyRef Name="RouteID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__MyTicket__Transp__46E78A0C">
+          <End Role="Transporter" Type="Self.Transporter" Multiplicity="0..1" />
+          <End Role="MyTicket" Type="Self.MyTicket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Transporter">
+              <PropertyRef Name="TransporterID" />
+            </Principal>
+            <Dependent Role="MyTicket">
+              <PropertyRef Name="TransporterID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Passenger__Gende__49C3F6B7">
+          <End Role="Gender" Type="Self.Gender" Multiplicity="0..1" />
+          <End Role="Passenger" Type="Self.Passenger" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Gender">
+              <PropertyRef Name="GenderID" />
+            </Principal>
+            <Dependent Role="Passenger">
+              <PropertyRef Name="GenderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Route__StationDe__4AB81AF0">
+          <End Role="StationDeparture" Type="Self.StationDeparture" Multiplicity="0..1" />
+          <End Role="Route" Type="Self.Route" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StationDeparture">
+              <PropertyRef Name="StationID" />
+            </Principal>
+            <Dependent Role="Route">
+              <PropertyRef Name="StationDepartureID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Route__StationTa__4BAC3F29">
+          <End Role="StationTarget" Type="Self.StationTarget" Multiplicity="0..1" />
+          <End Role="Route" Type="Self.Route" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StationTarget">
+              <PropertyRef Name="StationID" />
+            </Principal>
+            <Dependent Role="Route">
+              <PropertyRef Name="StationTargetID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="Хранилище PassengerTransportationModelContainer">
+          <EntitySet Name="Gender" EntityType="Self.Gender" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="MyTicket" EntityType="Self.MyTicket" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Nationality" EntityType="Self.Nationality" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Passenger" EntityType="Self.Passenger" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Route" EntityType="Self.Route" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="StationDeparture" EntityType="Self.StationDeparture" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="StationTarget" EntityType="Self.StationTarget" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Task" EntityType="Self.Task" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Transporter" EntityType="Self.Transporter" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__MyTicket__Nation__48CFD27E" Association="Self.FK__MyTicket__Nation__48CFD27E">
+            <End Role="Nationality" EntitySet="Nationality" />
+            <End Role="MyTicket" EntitySet="MyTicket" />
+          </AssociationSet>
+          <AssociationSet Name="FK__MyTicket__Passen__47DBAE45" Association="Self.FK__MyTicket__Passen__47DBAE45">
+            <End Role="Passenger" EntitySet="Passenger" />
+            <End Role="MyTicket" EntitySet="MyTicket" />
+          </AssociationSet>
+          <AssociationSet Name="FK__MyTicket__RouteI__45F365D3" Association="Self.FK__MyTicket__RouteI__45F365D3">
+            <End Role="Route" EntitySet="Route" />
+            <End Role="MyTicket" EntitySet="MyTicket" />
+          </AssociationSet>
+          <AssociationSet Name="FK__MyTicket__Transp__46E78A0C" Association="Self.FK__MyTicket__Transp__46E78A0C">
+            <End Role="Transporter" EntitySet="Transporter" />
+            <End Role="MyTicket" EntitySet="MyTicket" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Passenger__Gende__49C3F6B7" Association="Self.FK__Passenger__Gende__49C3F6B7">
+            <End Role="Gender" EntitySet="Gender" />
+            <End Role="Passenger" EntitySet="Passenger" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Route__StationDe__4AB81AF0" Association="Self.FK__Route__StationDe__4AB81AF0">
+            <End Role="StationDeparture" EntitySet="StationDeparture" />
+            <End Role="Route" EntitySet="Route" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Route__StationTa__4BAC3F29" Association="Self.FK__Route__StationTa__4BAC3F29">
+            <End Role="StationTarget" EntitySet="StationTarget" />
+            <End Role="Route" EntitySet="Route" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PassengerTransportationModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Gender">
+          <Key>
+            <PropertyRef Name="GenderID" />
+          </Key>
+          <Property Name="GenderID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Gender1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Passenger" Relationship="Self.FK__Passenger__Gende__49C3F6B7" FromRole="Gender" ToRole="Passenger" />
+        </EntityType>
+        <EntityType Name="MyTicket">
+          <Key>
+            <PropertyRef Name="TicketID" />
+          </Key>
+          <Property Name="TicketID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="11" FixedLength="false" Unicode="true" />
+          <Property Name="PassportNumber" Type="Int32" />
+          <Property Name="PlaceNumber" Type="Int32" />
+          <Property Name="CostTicket" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="NationalityID" Type="Int32" />
+          <Property Name="RouteID" Type="Int32" />
+          <Property Name="TransporterID" Type="Int32" />
+          <Property Name="PassengerID" Type="Int32" />
+          <NavigationProperty Name="Nationality" Relationship="Self.FK__MyTicket__Nation__48CFD27E" FromRole="MyTicket" ToRole="Nationality" />
+          <NavigationProperty Name="Passenger" Relationship="Self.FK__MyTicket__Passen__47DBAE45" FromRole="MyTicket" ToRole="Passenger" />
+          <NavigationProperty Name="Route" Relationship="Self.FK__MyTicket__RouteI__45F365D3" FromRole="MyTicket" ToRole="Route" />
+          <NavigationProperty Name="Transporter" Relationship="Self.FK__MyTicket__Transp__46E78A0C" FromRole="MyTicket" ToRole="Transporter" />
+        </EntityType>
+        <EntityType Name="Nationality">
+          <Key>
+            <PropertyRef Name="NationalityID" />
+          </Key>
+          <Property Name="NationalityID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nationality1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="MyTicket" Relationship="Self.FK__MyTicket__Nation__48CFD27E" FromRole="Nationality" ToRole="MyTicket" />
+        </EntityType>
+        <EntityType Name="Passenger">
+          <Key>
+            <PropertyRef Name="PassengerID" />
+          </Key>
+          <Property Name="PassengerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Surname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Patronymic" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DateBirth" Type="DateTime" Precision="0" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Login" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="GenderID" Type="Int32" />
+          <NavigationProperty Name="Gender" Relationship="Self.FK__Passenger__Gende__49C3F6B7" FromRole="Passenger" ToRole="Gender" />
+          <NavigationProperty Name="MyTicket" Relationship="Self.FK__MyTicket__Passen__47DBAE45" FromRole="Passenger" ToRole="MyTicket" />
+        </EntityType>
+        <EntityType Name="Route">
+          <Key>
+            <PropertyRef Name="RouteID" />
+          </Key>
+          <Property Name="RouteID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DateTargetStation" Type="DateTime" Precision="3" />
+          <Property Name="DateDepartureStation" Type="DateTime" Precision="3" />
+          <Property Name="ReservedSeatCost" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="CompartmentCost" Type="Decimal" Precision="16" Scale="2" />
+          <Property Name="StationDepartureID" Type="Int32" />
+          <Property Name="StationTargetID" Type="Int32" />
+          <NavigationProperty Name="MyTicket" Relationship="Self.FK__MyTicket__RouteI__45F365D3" FromRole="Route" ToRole="MyTicket" />
+          <NavigationProperty Name="StationDeparture" Relationship="Self.FK__Route__StationDe__4AB81AF0" FromRole="Route" ToRole="StationDeparture" />
+          <NavigationProperty Name="StationTarget" Relationship="Self.FK__Route__StationTa__4BAC3F29" FromRole="Route" ToRole="StationTarget" />
+        </EntityType>
+        <EntityType Name="StationDeparture">
+          <Key>
+            <PropertyRef Name="StationID" />
+          </Key>
+          <Property Name="StationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameDepartureStation" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Route" Relationship="Self.FK__Route__StationDe__4AB81AF0" FromRole="StationDeparture" ToRole="Route" />
+        </EntityType>
+        <EntityType Name="StationTarget">
+          <Key>
+            <PropertyRef Name="StationID" />
+          </Key>
+          <Property Name="StationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NameTargetStation" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Route" Relationship="Self.FK__Route__StationTa__4BAC3F29" FromRole="StationTarget" ToRole="Route" />
+        </EntityType>
+        <EntityType Name="Task">
+          <Key>
+            <PropertyRef Name="TaskID" />
+          </Key>
+          <Property Name="TaskID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Subject" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DateTask" Type="DateTime" Precision="3" />
+          <Property Name="Priority" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Transporter">
+          <Key>
+            <PropertyRef Name="TransporterID" />
+          </Key>
+          <Property Name="TransporterID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="MyTicket" Relationship="Self.FK__MyTicket__Transp__46E78A0C" FromRole="Transporter" ToRole="MyTicket" />
+        </EntityType>
+        <Association Name="FK__Passenger__Gende__49C3F6B7">
+          <End Role="Gender" Type="Self.Gender" Multiplicity="0..1" />
+          <End Role="Passenger" Type="Self.Passenger" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Gender">
+              <PropertyRef Name="GenderID" />
+            </Principal>
+            <Dependent Role="Passenger">
+              <PropertyRef Name="GenderID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__MyTicket__Nation__48CFD27E">
+          <End Role="Nationality" Type="Self.Nationality" Multiplicity="0..1" />
+          <End Role="MyTicket" Type="Self.MyTicket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Nationality">
+              <PropertyRef Name="NationalityID" />
+            </Principal>
+            <Dependent Role="MyTicket">
+              <PropertyRef Name="NationalityID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__MyTicket__Passen__47DBAE45">
+          <End Role="Passenger" Type="Self.Passenger" Multiplicity="0..1" />
+          <End Role="MyTicket" Type="Self.MyTicket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Passenger">
+              <PropertyRef Name="PassengerID" />
+            </Principal>
+            <Dependent Role="MyTicket">
+              <PropertyRef Name="PassengerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__MyTicket__RouteI__45F365D3">
+          <End Role="Route" Type="Self.Route" Multiplicity="0..1" />
+          <End Role="MyTicket" Type="Self.MyTicket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Route">
+              <PropertyRef Name="RouteID" />
+            </Principal>
+            <Dependent Role="MyTicket">
+              <PropertyRef Name="RouteID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__MyTicket__Transp__46E78A0C">
+          <End Role="Transporter" Type="Self.Transporter" Multiplicity="0..1" />
+          <End Role="MyTicket" Type="Self.MyTicket" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Transporter">
+              <PropertyRef Name="TransporterID" />
+            </Principal>
+            <Dependent Role="MyTicket">
+              <PropertyRef Name="TransporterID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Route__StationDe__4AB81AF0">
+          <End Role="StationDeparture" Type="Self.StationDeparture" Multiplicity="0..1" />
+          <End Role="Route" Type="Self.Route" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StationDeparture">
+              <PropertyRef Name="StationID" />
+            </Principal>
+            <Dependent Role="Route">
+              <PropertyRef Name="StationDepartureID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Route__StationTa__4BAC3F29">
+          <End Role="StationTarget" Type="Self.StationTarget" Multiplicity="0..1" />
+          <End Role="Route" Type="Self.Route" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="StationTarget">
+              <PropertyRef Name="StationID" />
+            </Principal>
+            <Dependent Role="Route">
+              <PropertyRef Name="StationTargetID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="PassengerTransportationEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Gender" EntityType="Self.Gender" />
+          <EntitySet Name="MyTicket" EntityType="Self.MyTicket" />
+          <EntitySet Name="Nationality" EntityType="Self.Nationality" />
+          <EntitySet Name="Passenger" EntityType="Self.Passenger" />
+          <EntitySet Name="Route" EntityType="Self.Route" />
+          <EntitySet Name="StationDeparture" EntityType="Self.StationDeparture" />
+          <EntitySet Name="StationTarget" EntityType="Self.StationTarget" />
+          <EntitySet Name="Task" EntityType="Self.Task" />
+          <EntitySet Name="Transporter" EntityType="Self.Transporter" />
+          <AssociationSet Name="FK__Passenger__Gende__49C3F6B7" Association="Self.FK__Passenger__Gende__49C3F6B7">
+            <End Role="Gender" EntitySet="Gender" />
+            <End Role="Passenger" EntitySet="Passenger" />
+          </AssociationSet>
+          <AssociationSet Name="FK__MyTicket__Nation__48CFD27E" Association="Self.FK__MyTicket__Nation__48CFD27E">
+            <End Role="Nationality" EntitySet="Nationality" />
+            <End Role="MyTicket" EntitySet="MyTicket" />
+          </AssociationSet>
+          <AssociationSet Name="FK__MyTicket__Passen__47DBAE45" Association="Self.FK__MyTicket__Passen__47DBAE45">
+            <End Role="Passenger" EntitySet="Passenger" />
+            <End Role="MyTicket" EntitySet="MyTicket" />
+          </AssociationSet>
+          <AssociationSet Name="FK__MyTicket__RouteI__45F365D3" Association="Self.FK__MyTicket__RouteI__45F365D3">
+            <End Role="Route" EntitySet="Route" />
+            <End Role="MyTicket" EntitySet="MyTicket" />
+          </AssociationSet>
+          <AssociationSet Name="FK__MyTicket__Transp__46E78A0C" Association="Self.FK__MyTicket__Transp__46E78A0C">
+            <End Role="Transporter" EntitySet="Transporter" />
+            <End Role="MyTicket" EntitySet="MyTicket" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Route__StationDe__4AB81AF0" Association="Self.FK__Route__StationDe__4AB81AF0">
+            <End Role="StationDeparture" EntitySet="StationDeparture" />
+            <End Role="Route" EntitySet="Route" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Route__StationTa__4BAC3F29" Association="Self.FK__Route__StationTa__4BAC3F29">
+            <End Role="StationTarget" EntitySet="StationTarget" />
+            <End Role="Route" EntitySet="Route" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Хранилище PassengerTransportationModelContainer" CdmEntityContainer="PassengerTransportationEntities">
+          <EntitySetMapping Name="Gender">
+            <EntityTypeMapping TypeName="PassengerTransportationModel.Gender">
+              <MappingFragment StoreEntitySet="Gender">
+                <ScalarProperty Name="GenderID" ColumnName="GenderID" />
+                <ScalarProperty Name="Gender1" ColumnName="Gender" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MyTicket">
+            <EntityTypeMapping TypeName="PassengerTransportationModel.MyTicket">
+              <MappingFragment StoreEntitySet="MyTicket">
+                <ScalarProperty Name="TicketID" ColumnName="TicketID" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+                <ScalarProperty Name="PassportNumber" ColumnName="PassportNumber" />
+                <ScalarProperty Name="PlaceNumber" ColumnName="PlaceNumber" />
+                <ScalarProperty Name="CostTicket" ColumnName="CostTicket" />
+                <ScalarProperty Name="NationalityID" ColumnName="NationalityID" />
+                <ScalarProperty Name="RouteID" ColumnName="RouteID" />
+                <ScalarProperty Name="TransporterID" ColumnName="TransporterID" />
+                <ScalarProperty Name="PassengerID" ColumnName="PassengerID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Nationality">
+            <EntityTypeMapping TypeName="PassengerTransportationModel.Nationality">
+              <MappingFragment StoreEntitySet="Nationality">
+                <ScalarProperty Name="NationalityID" ColumnName="NationalityID" />
+                <ScalarProperty Name="Nationality1" ColumnName="Nationality" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Passenger">
+            <EntityTypeMapping TypeName="PassengerTransportationModel.Passenger">
+              <MappingFragment StoreEntitySet="Passenger">
+                <ScalarProperty Name="PassengerID" ColumnName="PassengerID" />
+                <ScalarProperty Name="Surname" ColumnName="Surname" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Patronymic" ColumnName="Patronymic" />
+                <ScalarProperty Name="DateBirth" ColumnName="DateBirth" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="Login" ColumnName="Login" />
+                <ScalarProperty Name="GenderID" ColumnName="GenderID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Route">
+            <EntityTypeMapping TypeName="PassengerTransportationModel.Route">
+              <MappingFragment StoreEntitySet="Route">
+                <ScalarProperty Name="RouteID" ColumnName="RouteID" />
+                <ScalarProperty Name="DateTargetStation" ColumnName="DateTargetStation" />
+                <ScalarProperty Name="DateDepartureStation" ColumnName="DateDepartureStation" />
+                <ScalarProperty Name="ReservedSeatCost" ColumnName="ReservedSeatCost" />
+                <ScalarProperty Name="CompartmentCost" ColumnName="CompartmentCost" />
+                <ScalarProperty Name="StationDepartureID" ColumnName="StationDepartureID" />
+                <ScalarProperty Name="StationTargetID" ColumnName="StationTargetID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StationDeparture">
+            <EntityTypeMapping TypeName="PassengerTransportationModel.StationDeparture">
+              <MappingFragment StoreEntitySet="StationDeparture">
+                <ScalarProperty Name="StationID" ColumnName="StationID" />
+                <ScalarProperty Name="NameDepartureStation" ColumnName="NameDepartureStation" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StationTarget">
+            <EntityTypeMapping TypeName="PassengerTransportationModel.StationTarget">
+              <MappingFragment StoreEntitySet="StationTarget">
+                <ScalarProperty Name="StationID" ColumnName="StationID" />
+                <ScalarProperty Name="NameTargetStation" ColumnName="NameTargetStation" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Task">
+            <EntityTypeMapping TypeName="PassengerTransportationModel.Task">
+              <MappingFragment StoreEntitySet="Task">
+                <ScalarProperty Name="TaskID" ColumnName="TaskID" />
+                <ScalarProperty Name="Subject" ColumnName="Subject" />
+                <ScalarProperty Name="Text" ColumnName="Text" />
+                <ScalarProperty Name="DateTask" ColumnName="DateTask" />
+                <ScalarProperty Name="Priority" ColumnName="Priority" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Transporter">
+            <EntityTypeMapping TypeName="PassengerTransportationModel.Transporter">
+              <MappingFragment StoreEntitySet="Transporter">
+                <ScalarProperty Name="TransporterID" ColumnName="TransporterID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Нет" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

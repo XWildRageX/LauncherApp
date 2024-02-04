@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "0k06qMSFdRHjPfy8z87C5g7AuFUCm/WjYkAY8IN2+5VR9cwtu3oR08RfAh5sc6jOzP8535WGsRps+LK4bdrHvQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Gigаbyte\\Desktop\\ав\\Launcher\\Launcher\\Launcher.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gigаbyte\\.nuget\\packages\\system.codedom\\8.0.0\\system.codedom.8.0.0.nupkg.sha512",
+    "C:\\Users\\Gigаbyte\\.nuget\\packages\\system.management\\8.0.0\\system.management.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

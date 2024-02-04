@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище PassengerTransportationModelContainer" CdmEntityContainer="PassengerTransportationEntities">
+    <EntitySetMapping Name="Gender">
+      <EntityTypeMapping TypeName="PassengerTransportationModel.Gender">
+        <MappingFragment StoreEntitySet="Gender">
+          <ScalarProperty Name="GenderID" ColumnName="GenderID" />
+          <ScalarProperty Name="Gender1" ColumnName="Gender" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MyTicket">
+      <EntityTypeMapping TypeName="PassengerTransportationModel.MyTicket">
+        <MappingFragment StoreEntitySet="MyTicket">
+          <ScalarProperty Name="TicketID" ColumnName="TicketID" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="PassportNumber" ColumnName="PassportNumber" />
+          <ScalarProperty Name="PlaceNumber" ColumnName="PlaceNumber" />
+          <ScalarProperty Name="CostTicket" ColumnName="CostTicket" />
+          <ScalarProperty Name="NationalityID" ColumnName="NationalityID" />
+          <ScalarProperty Name="RouteID" ColumnName="RouteID" />
+          <ScalarProperty Name="TransporterID" ColumnName="TransporterID" />
+          <ScalarProperty Name="PassengerID" ColumnName="PassengerID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Nationality">
+      <EntityTypeMapping TypeName="PassengerTransportationModel.Nationality">
+        <MappingFragment StoreEntitySet="Nationality">
+          <ScalarProperty Name="NationalityID" ColumnName="NationalityID" />
+          <ScalarProperty Name="Nationality1" ColumnName="Nationality" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Passenger">
+      <EntityTypeMapping TypeName="PassengerTransportationModel.Passenger">
+        <MappingFragment StoreEntitySet="Passenger">
+          <ScalarProperty Name="PassengerID" ColumnName="PassengerID" />
+          <ScalarProperty Name="Surname" ColumnName="Surname" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Patronymic" ColumnName="Patronymic" />
+          <ScalarProperty Name="DateBirth" ColumnName="DateBirth" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="GenderID" ColumnName="GenderID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Route">
+      <EntityTypeMapping TypeName="PassengerTransportationModel.Route">
+        <MappingFragment StoreEntitySet="Route">
+          <ScalarProperty Name="RouteID" ColumnName="RouteID" />
+          <ScalarProperty Name="DateTargetStation" ColumnName="DateTargetStation" />
+          <ScalarProperty Name="DateDepartureStation" ColumnName="DateDepartureStation" />
+          <ScalarProperty Name="ReservedSeatCost" ColumnName="ReservedSeatCost" />
+          <ScalarProperty Name="CompartmentCost" ColumnName="CompartmentCost" />
+          <ScalarProperty Name="StationDepartureID" ColumnName="StationDepartureID" />
+          <ScalarProperty Name="StationTargetID" ColumnName="StationTargetID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StationDeparture">
+      <EntityTypeMapping TypeName="PassengerTransportationModel.StationDeparture">
+        <MappingFragment StoreEntitySet="StationDeparture">
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="NameDepartureStation" ColumnName="NameDepartureStation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StationTarget">
+      <EntityTypeMapping TypeName="PassengerTransportationModel.StationTarget">
+        <MappingFragment StoreEntitySet="StationTarget">
+          <ScalarProperty Name="StationID" ColumnName="StationID" />
+          <ScalarProperty Name="NameTargetStation" ColumnName="NameTargetStation" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Task">
+      <EntityTypeMapping TypeName="PassengerTransportationModel.Task">
+        <MappingFragment StoreEntitySet="Task">
+          <ScalarProperty Name="TaskID" ColumnName="TaskID" />
+          <ScalarProperty Name="Subject" ColumnName="Subject" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="DateTask" ColumnName="DateTask" />
+          <ScalarProperty Name="Priority" ColumnName="Priority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Transporter">
+      <EntityTypeMapping TypeName="PassengerTransportationModel.Transporter">
+        <MappingFragment StoreEntitySet="Transporter">
+          <ScalarProperty Name="TransporterID" ColumnName="TransporterID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

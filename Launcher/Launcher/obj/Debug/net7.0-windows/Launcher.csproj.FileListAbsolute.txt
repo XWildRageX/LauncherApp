@@ -1,0 +1,145 @@
+C:\Users\Dmitrii\Desktop\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.exe
+C:\Users\Dmitrii\Desktop\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.deps.json
+C:\Users\Dmitrii\Desktop\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.runtimeconfig.json
+C:\Users\Dmitrii\Desktop\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.dll
+C:\Users\Dmitrii\Desktop\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.pdb
+C:\Users\Dmitrii\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.csproj.AssemblyReference.cache
+C:\Users\Dmitrii\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\Dmitrii\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\Dmitrii\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher_MarkupCompile.cache
+C:\Users\Dmitrii\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher_MarkupCompile.lref
+C:\Users\Dmitrii\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\Dmitrii\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.g.resources
+C:\Users\Dmitrii\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Dmitrii\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.AssemblyInfoInputs.cache
+C:\Users\Dmitrii\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.AssemblyInfo.cs
+C:\Users\Dmitrii\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.csproj.CoreCompileInputs.cache
+C:\Users\Dmitrii\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.dll
+C:\Users\Dmitrii\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\refint\Launcher.dll
+C:\Users\Dmitrii\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.pdb
+C:\Users\Dmitrii\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.genruntimeconfig.cache
+C:\Users\Dmitrii\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\ref\Launcher.dll
+C:\Users\Gigаbyte\Desktop\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.exe
+C:\Users\Gigаbyte\Desktop\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.deps.json
+C:\Users\Gigаbyte\Desktop\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.runtimeconfig.json
+C:\Users\Gigаbyte\Desktop\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.dll
+C:\Users\Gigаbyte\Desktop\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.pdb
+C:\Users\Gigаbyte\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.csproj.AssemblyReference.cache
+C:\Users\Gigаbyte\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\Gigаbyte\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\Gigаbyte\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher_MarkupCompile.cache
+C:\Users\Gigаbyte\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher_MarkupCompile.lref
+C:\Users\Gigаbyte\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\Gigаbyte\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.g.resources
+C:\Users\Gigаbyte\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gigаbyte\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.AssemblyInfoInputs.cache
+C:\Users\Gigаbyte\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.AssemblyInfo.cs
+C:\Users\Gigаbyte\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.csproj.CoreCompileInputs.cache
+C:\Users\Gigаbyte\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.dll
+C:\Users\Gigаbyte\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\refint\Launcher.dll
+C:\Users\Gigаbyte\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.pdb
+C:\Users\Gigаbyte\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.genruntimeconfig.cache
+C:\Users\Gigаbyte\Desktop\Launcher\Launcher\obj\Debug\net7.0-windows\ref\Launcher.dll
+C:\Users\admin\Desktop\поиск ошибки\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.exe
+C:\Users\admin\Desktop\поиск ошибки\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.deps.json
+C:\Users\admin\Desktop\поиск ошибки\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.runtimeconfig.json
+C:\Users\admin\Desktop\поиск ошибки\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.dll
+C:\Users\admin\Desktop\поиск ошибки\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.pdb
+C:\Users\admin\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.csproj.AssemblyReference.cache
+C:\Users\admin\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\admin\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\admin\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher_MarkupCompile.cache
+C:\Users\admin\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher_MarkupCompile.lref
+C:\Users\admin\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\admin\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.g.resources
+C:\Users\admin\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.AssemblyInfo.cs
+C:\Users\admin\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.dll
+C:\Users\admin\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\refint\Launcher.dll
+C:\Users\admin\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.pdb
+C:\Users\admin\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.genruntimeconfig.cache
+C:\Users\admin\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\ref\Launcher.dll
+C:\Users\admin\Desktop\поиск ошибки\Launcher\Launcher\bin\Debug\net7.0-windows\System.CodeDom.dll
+C:\Users\admin\Desktop\поиск ошибки\Launcher\Launcher\bin\Debug\net7.0-windows\System.Management.dll
+C:\Users\admin\Desktop\поиск ошибки\Launcher\Launcher\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\admin\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.csproj.CopyComplete
+C:\Users\Gigаbyte\Desktop\поиск ошибки\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.exe
+C:\Users\Gigаbyte\Desktop\поиск ошибки\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.deps.json
+C:\Users\Gigаbyte\Desktop\поиск ошибки\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.runtimeconfig.json
+C:\Users\Gigаbyte\Desktop\поиск ошибки\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.dll
+C:\Users\Gigаbyte\Desktop\поиск ошибки\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.pdb
+C:\Users\Gigаbyte\Desktop\поиск ошибки\Launcher\Launcher\bin\Debug\net7.0-windows\System.CodeDom.dll
+C:\Users\Gigаbyte\Desktop\поиск ошибки\Launcher\Launcher\bin\Debug\net7.0-windows\System.Management.dll
+C:\Users\Gigаbyte\Desktop\поиск ошибки\Launcher\Launcher\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\Gigаbyte\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.csproj.AssemblyReference.cache
+C:\Users\Gigаbyte\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\Gigаbyte\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\Gigаbyte\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher_MarkupCompile.cache
+C:\Users\Gigаbyte\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher_MarkupCompile.lref
+C:\Users\Gigаbyte\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\Gigаbyte\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.g.resources
+C:\Users\Gigаbyte\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gigаbyte\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.AssemblyInfoInputs.cache
+C:\Users\Gigаbyte\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.AssemblyInfo.cs
+C:\Users\Gigаbyte\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.csproj.CoreCompileInputs.cache
+C:\Users\Gigаbyte\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.csproj.CopyComplete
+C:\Users\Gigаbyte\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.dll
+C:\Users\Gigаbyte\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\refint\Launcher.dll
+C:\Users\Gigаbyte\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.pdb
+C:\Users\Gigаbyte\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.genruntimeconfig.cache
+C:\Users\Gigаbyte\Desktop\поиск ошибки\Launcher\Launcher\obj\Debug\net7.0-windows\ref\Launcher.dll
+C:\Users\Gigаbyte\Desktop\поиск ошибки\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.dll.config
+C:\Users\Gigаbyte\Desktop\Задание 1\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.exe
+C:\Users\Gigаbyte\Desktop\Задание 1\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.dll.config
+C:\Users\Gigаbyte\Desktop\Задание 1\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.deps.json
+C:\Users\Gigаbyte\Desktop\Задание 1\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.runtimeconfig.json
+C:\Users\Gigаbyte\Desktop\Задание 1\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.dll
+C:\Users\Gigаbyte\Desktop\Задание 1\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.pdb
+C:\Users\Gigаbyte\Desktop\Задание 1\Launcher\Launcher\bin\Debug\net7.0-windows\System.CodeDom.dll
+C:\Users\Gigаbyte\Desktop\Задание 1\Launcher\Launcher\bin\Debug\net7.0-windows\System.Management.dll
+C:\Users\Gigаbyte\Desktop\Задание 1\Launcher\Launcher\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\Gigаbyte\Desktop\Задание 1\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.csproj.AssemblyReference.cache
+C:\Users\Gigаbyte\Desktop\Задание 1\Launcher\Launcher\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\Gigаbyte\Desktop\Задание 1\Launcher\Launcher\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\Gigаbyte\Desktop\Задание 1\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher_MarkupCompile.cache
+C:\Users\Gigаbyte\Desktop\Задание 1\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher_MarkupCompile.lref
+C:\Users\Gigаbyte\Desktop\Задание 1\Launcher\Launcher\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\Gigаbyte\Desktop\Задание 1\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.g.resources
+C:\Users\Gigаbyte\Desktop\Задание 1\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gigаbyte\Desktop\Задание 1\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.AssemblyInfoInputs.cache
+C:\Users\Gigаbyte\Desktop\Задание 1\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.AssemblyInfo.cs
+C:\Users\Gigаbyte\Desktop\Задание 1\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.csproj.CoreCompileInputs.cache
+C:\Users\Gigаbyte\Desktop\Задание 1\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.csproj.CopyComplete
+C:\Users\Gigаbyte\Desktop\Задание 1\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.dll
+C:\Users\Gigаbyte\Desktop\Задание 1\Launcher\Launcher\obj\Debug\net7.0-windows\refint\Launcher.dll
+C:\Users\Gigаbyte\Desktop\Задание 1\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.pdb
+C:\Users\Gigаbyte\Desktop\Задание 1\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.genruntimeconfig.cache
+C:\Users\Gigаbyte\Desktop\Задание 1\Launcher\Launcher\obj\Debug\net7.0-windows\ref\Launcher.dll
+C:\Users\Gigаbyte\Desktop\ав\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.exe
+C:\Users\Gigаbyte\Desktop\ав\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.dll.config
+C:\Users\Gigаbyte\Desktop\ав\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.deps.json
+C:\Users\Gigаbyte\Desktop\ав\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.runtimeconfig.json
+C:\Users\Gigаbyte\Desktop\ав\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.dll
+C:\Users\Gigаbyte\Desktop\ав\Launcher\Launcher\bin\Debug\net7.0-windows\Launcher.pdb
+C:\Users\Gigаbyte\Desktop\ав\Launcher\Launcher\bin\Debug\net7.0-windows\System.CodeDom.dll
+C:\Users\Gigаbyte\Desktop\ав\Launcher\Launcher\bin\Debug\net7.0-windows\System.Management.dll
+C:\Users\Gigаbyte\Desktop\ав\Launcher\Launcher\bin\Debug\net7.0-windows\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\Gigаbyte\Desktop\ав\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.csproj.AssemblyReference.cache
+C:\Users\Gigаbyte\Desktop\ав\Launcher\Launcher\obj\Debug\net7.0-windows\MainWindow.g.cs
+C:\Users\Gigаbyte\Desktop\ав\Launcher\Launcher\obj\Debug\net7.0-windows\App.g.cs
+C:\Users\Gigаbyte\Desktop\ав\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher_MarkupCompile.cache
+C:\Users\Gigаbyte\Desktop\ав\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher_MarkupCompile.lref
+C:\Users\Gigаbyte\Desktop\ав\Launcher\Launcher\obj\Debug\net7.0-windows\MainWindow.baml
+C:\Users\Gigаbyte\Desktop\ав\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.g.resources
+C:\Users\Gigаbyte\Desktop\ав\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gigаbyte\Desktop\ав\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.AssemblyInfoInputs.cache
+C:\Users\Gigаbyte\Desktop\ав\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.AssemblyInfo.cs
+C:\Users\Gigаbyte\Desktop\ав\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.csproj.CoreCompileInputs.cache
+C:\Users\Gigаbyte\Desktop\ав\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.csproj.CopyComplete
+C:\Users\Gigаbyte\Desktop\ав\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.dll
+C:\Users\Gigаbyte\Desktop\ав\Launcher\Launcher\obj\Debug\net7.0-windows\refint\Launcher.dll
+C:\Users\Gigаbyte\Desktop\ав\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.pdb
+C:\Users\Gigаbyte\Desktop\ав\Launcher\Launcher\obj\Debug\net7.0-windows\Launcher.genruntimeconfig.cache
+C:\Users\Gigаbyte\Desktop\ав\Launcher\Launcher\obj\Debug\net7.0-windows\ref\Launcher.dll
